@@ -71,6 +71,17 @@ right: 0.55%;
   font-weight: 500;
   font-size: 22px;
 }
+
+.menu_elem{
+  line-height: 70px;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.menu_elem:hover{
+  background-color: #117FBD;
+}
 .dropdown-content {
   background-color: #179ae3;
   display: none;
