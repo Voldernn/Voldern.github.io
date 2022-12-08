@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Inter', sans-serif;
 }
 
@@ -103,48 +103,107 @@ footer{
   bottom: -1%;
   background-color: #117FBD;
 }
-.colorred{
-  color:red;
-}
-.oled{
+
+.consol{
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   text-align: center;
   margin-bottom: 50px;
   align-items:center;
 }
-.oled h1{
+
+.consol h1{
+  color: #107C10;
+font-style: italic;
   font-size: 700%;
-  font-style: italic;
 }
-.oled h2{
-  font-size: 200%;
+
+.consol h3{
+  color: #107C10;
+    font-size: 200%;
 }
-.oled p{
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: auto;
-margin-right: auto;
-  width: 40%;
-  font-size: 100%;
-  font-weight: lighter;
-}
-.podoled{
+.xboxs{
   align-items: center;
   display: grid;
-grid-template-columns: 20% 40%;
+  grid-template-columns: 15% 15% repeat(2, 20%) 15% 15%;
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-justify-content: center;
 }
-.pic_oled{
-  float: left;
-  grid-area: 1 / 1 / 2 / 2;
+.consol p{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 130%;
 }
-.text_oled{
+
+.pic_xbox{
   float: left;
-  grid-area: 1 / 2 / 2 / 3;
+   grid-area: 1 / 2 / 2 / 3;
+}
+.text_xbox{
+  float: left;
+  grid-area: 1 / 3 / 2 / 4;
   font-size: 100%;
+  text-align: left;
+}
+.pic_xbox1{
+  float: left;
+  grid-area: 1 / 5 / 2 / 6;
+}
+.text_xbox1{
+  float: left;
+    grid-area: 1 / 4 / 2 / 5;
+  font-size: 100%;
+  text-align: right;
+}
+
+.cards{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.cards img{
+  margin-left: 10px;
+  width: 30%;
+  border-radius: 60px;
+}
+.cont{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 130%;
+}
+.accessories img{
+  width: 15%;
+  height: 15%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.products{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+  margin-top:5%;
+}
+.products a{
+  font-weight: bold;
+}
+.product{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border: 10px solid #107C10;
+  border-radius: 40px;
+  padding: 2%;
+}
+.product button{
+  font-size: 100%;
+  background: #107C10;
+  border: 0;
+border-radius: 20px;
+color:white;
+width: 100%;
+height: 10%;
 }
