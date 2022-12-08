@@ -33,64 +33,6 @@ right: 0.55%;
     text-decoration: none;
     color: white;
 }
-.menu{
-  padding-right: 15%;
-  padding-left: 15%;
-  background-color: #179ae3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.menu a{
-  text-decoration: none;
-  color: white;
-}
-
-.menu button{
-  background-color: rgba(28,28,28,0);
-  border: 0;
-  height: 100%;
-  color: white;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.menu_elem{
-  line-height: 70px;
-  height: 100%;
-}
-
-.menu_elem:hover{
-  background-color: #117FBD;
-}
-.dropdown-content {
-  background-color: #179ae3;
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-
-/* Ссылки внутри выпадающего списка */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-.dropdown-content a:hover {background-color: #117FBD;}
-
-/* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {background-color: #117FBD;}
-
 footer{
   color:white;
   z-index: 5;
@@ -113,4 +55,161 @@ footer{
 
 .delivery h2{
   font-size: 60px;
+}
+@media (orientation: portrait){
+  .parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 70px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 101%;
+  position:relative;
+  top:-10;
+  right: 0.55%;
+  }
+
+  .header { grid-area: 1 / 1 / 2 / 6; }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 11;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #179ae3;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 10;
+  }
+  /* элементы меню */
+  .menu_elem {
+    display: block;
+    padding:30px 24px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .menu_elem:hover {
+    background-color: #179ae3;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+.menu button{
+  opacity: 0;
+}
+}
+@media (orientation:landscape){
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu{
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: #179ae3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu button{
+    background-color: rgba(28,28,28,0);
+    border: 0;
+    height: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .menu_elem{
+    line-height: 70px;
+    height: 100%;
+  }
+
+  .menu_elem:hover{
+    background-color: #117FBD;
+  }
+  .dropdown-content {
+    background-color: #179ae3;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #117FBD;}
+
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {background-color: #117FBD;}
 }
