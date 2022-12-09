@@ -16,9 +16,7 @@ right: 0.55%;
 
 
 .header { grid-area: 1 / 1 / 2 / 8; }
-.adv { grid-area: 2 / 2 / 4 / 7; }
-.left_button { grid-area: 2 / 1 / 4 / 2; }
-.right_button { grid-area: 2 / 7 / 4 / 8; }
+  .adv { grid-area: 2 / 1 / 4 / 8; }
 .menu { grid-area: 4 / 1 / 5 / 8; }
 
 .header{
@@ -38,25 +36,6 @@ right: 0.55%;
 }
 .adv{
   background-color: #e40011;
-}
-.left_button{
-  background-color: #c30b19;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.left_button img{
-  width: 50%;
-  transform:rotate(180deg);
-}
-.right_button{
-  background-color: #c30b19;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right_button img{
-  width: 50%;
 }
 .console{
   font-weight: bolder;
@@ -159,9 +138,8 @@ footer{
   }
 
   .header { grid-area: 1 / 1 / 2 / 8; }
-  .adv { grid-area: 2 / 2 / 4 / 7; }
-  .left_button { grid-area: 2 / 1 / 4 / 2; }
-  .right_button { grid-area: 2 / 7 / 4 / 8; }
+  .adv { grid-area: 2 / 1 / 4 / 8; }
+
 
   #menu__toggle {
     opacity: 0;
@@ -304,4 +282,25 @@ footer{
 
   /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
   .dropdown:hover .dropbtn {background-color: #117FBD;}
+}
+/* Slideshow container */
+.adv {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #e40011;
+  text-align: center;
+}
+.mySlides img{
+  height: 100%;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
