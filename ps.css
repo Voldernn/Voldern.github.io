@@ -152,7 +152,7 @@ height: 10%;
 }
 @media (orientation: portrait){
   .sonys{
-    font-size: 60%;
+    font-size: 50%;
   }
   .parent {
   display: grid;
