@@ -118,7 +118,19 @@ height: 10%;
 .pro button{
   opacity: 0.7;
 }
+.pic_pro img{
+  width: 100%;
+}
 @media (orientation: portrait){
+  .text_pro{
+    font-size: 8px;
+  }
+  .pic_pro img{
+    z-index: -1;
+    position: relative;
+    right:50%;
+    width: 300px;
+  }
   .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

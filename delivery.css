@@ -57,6 +57,8 @@ footer{
   font-size: 60px;
 }
 @media (orientation: portrait){
+
+
   .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

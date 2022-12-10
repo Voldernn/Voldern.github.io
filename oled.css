@@ -119,6 +119,9 @@ height: 10%;
 }
 
 @media (orientation: portrait){
+  .text_oled{
+    font-size: 8px;
+  }
   .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

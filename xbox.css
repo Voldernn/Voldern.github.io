@@ -150,6 +150,9 @@ width: 100%;
 height: 10%;
 }
 @media (orientation: portrait){
+  .xboxs {
+    font-size: 50%;
+  }
   .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
