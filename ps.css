@@ -151,6 +151,12 @@ width: 100%;
 height: 10%;
 }
 @media (orientation: portrait){
+  .pic_sony img{
+    width: 100%;
+  }
+  .pic_sony1 img{
+    width: 100%;
+  }
   .sonys{
     font-size: 50%;
   }
