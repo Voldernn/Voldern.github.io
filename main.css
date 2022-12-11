@@ -144,7 +144,9 @@ width: 50%;
 .social:hover{
     background-color:  #179ae3;
 }
-
+footer p{
+  position: absolute;
+}
 @media (orientation: portrait){
   .parent {
   display: grid;

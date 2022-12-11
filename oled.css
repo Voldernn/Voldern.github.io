@@ -2,7 +2,9 @@ body {
   background-color: black;
   font-family: 'Inter', sans-serif;
 }
-
+footer p{
+  position: absolute;
+}
 .parent {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
